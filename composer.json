@@ -3,6 +3,7 @@
   "type": "yii2-extension",
   "description": "codexten bootstrap3 wrapper for yii 2.0 or higher",
   "require": {
+    "codexten/yii-web": "~2.0",
     "yiisoft/yii2-bootstrap": "~2.0.0"
   },
   "autoload": {
