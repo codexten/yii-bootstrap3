@@ -15,11 +15,8 @@
     "branch-alias": {
       "dev-master": "2.0.x-dev"
     },
-    "sconfig-plugin": {
-      "adminlte2": [
-        "$web",
-        "config/adminlte2.php"
-      ]
+    "config-plugin": {
+      "bootstrap3": "config/bootstrap3.php"
     }
   }
 }
