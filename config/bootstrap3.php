@@ -6,16 +6,31 @@
  * Time: 10:58 AM
  */
 
-return [
-    'components' => [
-        'view' => [
-            'theme' => [
-                'pathMap' => [
-                    '@app/views' => [
-                        '@codexten/yii/bootstrap3/views',
+return \yii\helpers\ArrayHelper::merge(
+//bootstrap3
+    [
+        'components' => [
+            'view' => [
+                'theme' => [
+                    'pathMap' => [
+                        '@app/views' => [
+                            '@codexten/yii/bootstrap3/views',
+                        ],
                     ],
                 ],
             ],
         ],
     ],
-];
+
+    //grid
+    [
+        'container' => [
+            'definitions' => [
+                \yii\grid\GridView::class => [
+                    'class' => \yii\grid\GridView::class,
+                    'options' => ['class' => 'grid-view table-responsive'],
+                ],
+            ],
+        ],
+    ]
+);
