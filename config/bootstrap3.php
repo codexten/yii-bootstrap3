@@ -17,7 +17,7 @@ return \yii\helpers\ArrayHelper::merge(
                             '@codexten/yii/bootstrap3/views',
                         ],
                         '@app/widgets/views' => [
-                            '@codexten/yii/adminlte2/widgets/views',
+                            '@codexten/yii/bootstrap3/widgets/views',
                         ],
                     ],
                 ],
